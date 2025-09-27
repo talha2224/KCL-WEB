@@ -44,7 +44,7 @@ const Navbar = () => {
                     <p className="hover: transition">Tv Series</p>
                     <p className="hover: transition">Support</p>
                     <p className="hover: transition">Contact</p>
-                    <Link to={"/login"}><p className="hover: transition">Contact</p></Link>
+                    <Link to={"/login"}><p className="hover: transition">Login</p></Link>
                 </div>
             )}
         </nav>
