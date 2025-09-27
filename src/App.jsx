@@ -15,6 +15,7 @@ import CategoriesPage from './pages/Admin/Dashboard/CategoriesPage';
 import WatchlistsPage from './pages/Admin/Dashboard/WatchlistsPage';
 import ExplorePage from './pages/Admin/Dashboard/ExplorePage';
 import SeriesPage from './pages/Admin/Dashboard/SeriesPage';
+import DownloadPage from './pages/Admin/Dashboard/DownloadPage';
 const AdminLayout = lazy(() => import('./components/admin/Layout'));
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="watchlists" element={<WatchlistsPage />} />
             <Route path="explore" element={<ExplorePage />} />
             <Route path="series" element={<SeriesPage />} />
+            <Route path="downloads" element={<DownloadPage />} />
           </Route>
 
 
