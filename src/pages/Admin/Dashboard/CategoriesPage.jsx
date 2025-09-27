@@ -1,5 +1,4 @@
 import React from 'react';
-import { IoMdArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import cat_1 from '../../../assets/dashboard/categories/cat1.png';
 import cat_2 from '../../../assets/dashboard/categories/cat2.png';
@@ -46,14 +45,16 @@ const CategoriesPage = () => {
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
                 {categories.map((category, index) => (
                     <div key={index} className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-                        <img 
-                            src={category.image} 
-                            alt={category.name} 
-                            className="w-full h-full object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-105" 
-                        />
-                        {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                        <Link to={`/dashboard/categories/movie/${index}`}>
+                            <img
+                                src={category.image}
+                                alt={category.name}
+                                className="w-full h-full object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-105"
+                            />
+                            {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
                             <p className="text-xl font-bold">{category.name}</p>
                         </div> */}
+                        </Link>
                     </div>
                 ))}
             </div>

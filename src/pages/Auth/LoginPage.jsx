@@ -3,7 +3,7 @@ import moview_bg from '../../assets/auth/moview_bg.png';
 import google from '../../assets/auth/google.png';
 import facebook from '../../assets/auth/facebook.png';
 import apple from '../../assets/auth/apple.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -81,7 +81,7 @@ const LoginPage = () => {
                     </div>
 
                     <div className="text-left text-sm text-[#C5DDFF] hover:underline cursor-pointer">
-                        Forgot password?
+                       <Link to={"/forgot"}>Forgot password?</Link>
                     </div>
 
                     <button
@@ -93,7 +93,7 @@ const LoginPage = () => {
                 </form>
 
                 <div className="mt-6 text-center text-sm text-[#C5DDFF]">
-                    Don't have an account? <a href="#" className="font-semibold text-white hover:underline">Sign up</a>
+                    Don't have an account? <Link to={"/register"} className="font-semibold text-white hover:underline">Sign up</Link>
                 </div>
             </div>
         </div>

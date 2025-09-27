@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useSidebar } from '../../context/SidebarContext';
-import { CgProfile } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import avatar from '../../assets/dashboard/avatar.png';
 import { FaSearch, FaBell, FaChevronDown, FaRegBell } from 'react-icons/fa';
@@ -45,7 +44,7 @@ const Header = ({ location }) => {
                     </div>
 
                     {/* Profile Section */}
-                    <Link to={"/dashboard/home"} className='flex items-center gap-x-2 cursor-pointer'>
+                    <Link to={"/dashboard/profile"} className='flex items-center gap-x-2 cursor-pointer'>
                         <img src={avatar} alt="User Avatar" className='h-8 w-8 rounded-full border-2 border-[#12B037]' />
                         <span className='hidden md:block font-medium'>Marci Fumans</span>
                         <FaChevronDown className='text-sm hidden md:block' />
