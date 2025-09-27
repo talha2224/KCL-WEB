@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { RiLockPasswordLine } from "react-icons/ri";
 import { AiOutlineClose } from 'react-icons/ai';
 import { BsCalendar, BsChevronDown, BsImage, BsLockFill } from 'react-icons/bs';
 import { IoMdPerson } from 'react-icons/io';
+import moview_bg from '../../assets/auth/moview_bg.png';
 
 // Assuming these imports are available and correct
 // import moview_bg from '../../assets/auth/moview_bg.png';
@@ -305,7 +304,7 @@ const RegisterPage = () => {
     <div
       // Using a placeholder background style since moview_bg import is commented out
       style={{
-        backgroundImage: `url(${'https://placehold.co/1920x1080/0A1B36/1C365A?text=KGL+MOVIES+Background'})`
+        backgroundImage: `url(${moview_bg})`
       }}
       className='flex justify-center items-center w-screen h-screen bg-cover bg-center'
     >
