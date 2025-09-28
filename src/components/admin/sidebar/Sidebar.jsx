@@ -285,7 +285,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className={`lg:block w-[15rem] h-[100vh] bg-[#0F294E] relative border-r border-r-[#21477C] flex flex-col`}>
+      <div className={`lg:block w-[15rem] h-[100vh] bg-[#0F294E] relative border-r border-r-[#21477C] hidden flex-col`}>
         <div className="px-5 py-2 -ml-3 border-b border-b-[#21477C] flex-shrink-0">
           <img src={Logo} alt="" className='' />
         </div>
